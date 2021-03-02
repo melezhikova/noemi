@@ -46,10 +46,8 @@
     margin: 40px 0 25px;
   }
   
-  .trend-framework {
-    width: 100%;
-  }
   .trend {
+    width: 100%;
     min-height: 230px;
   }
   .next-trend {
@@ -88,6 +86,7 @@
   .next-paragraph {
     margin-top: 10px;
   }
+  
   .shop {
     margin: 0 15px;
   }
@@ -142,22 +141,18 @@
   .trends-box {
     margin: 20px 0 0;
   }
-  .trend-framework {
-    width: 50%;
-  }
   .trend {
+    width: 50%;
     min-height: 250px;
   }
   .next-trend {
     margin: 0;
   }
-  .third-trend,
-  .fourth-trend {
-    margin-top: 2px;
+  .right-trend {
+    border-left: 2px solid #ffffff;
   }
-  .second-trend,
-  .fourth-trend {
-    margin-left: 2px;
+  .following-trend {
+    border-top: 2px solid #ffffff;
   }
   .trend-case {
     margin: 15px 20px;
@@ -221,14 +216,13 @@
   .item {
     width: 50%;
   }
-  .first-item,
-  .third-item {
+  .left-item {
     padding-right: 10px;
   }
-  .second-item {
+  .right-item {
     padding-left: 10px;
   }
-  .third-item {
+  .following-item {
     margin-top: 28px;
   }
 
@@ -343,14 +337,12 @@
     margin: 30px 0 0;
     flex-wrap: nowrap;
   }
-  .trend-framework {
-    width: 25%;
-  }
   .trend {
     min-height: 320px;
+    width: 25%;
   }
   .next-trend {
-    margin-left: 2px;
+    border-left: 2px solid #ffffff;
   }
   .trend-case {
     margin: 15px 25px;
@@ -461,6 +453,7 @@
 .trend {
   display: flex;
   align-items: flex-end;
+  box-sizing: border-box;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -468,16 +461,16 @@
   position: relative;
   z-index: 0;
 }
-.first-trend {
+.trend:nth-child(1) {
   background-image: url(../images/trend1.jpg);
 }
-.second-trend {
+.trend:nth-child(2) {
   background-image: url(../images/trend2.jpg);
 }
-.third-trend {
+.trend:nth-child(3) {
   background-image: url(../images/trend3.jpg);
 }
-.fourth-trend {
+.trend:nth-child(4) {
   background-image: url(../images/trend4.jpg);
 }
 .trend::before {
@@ -837,7 +830,7 @@ p {
   position: relative;
 }
 .popup-container .section-name {
-  margin-top: 20px;
+  margin: 20px 0 25px;
 }
 .feedback-form {
   margin: 0 20px 25px;
@@ -857,9 +850,9 @@ p {
 .popup-radio-answer {
   margin-bottom: 25px;
 }
-.feedback > .popup-radio-group,
-.feedback > .frequency-field,
-.feedback > .request-field {
+.popup-radio-group,
+.frequency-field,
+.request-field {
   -webkit-appearance: none;
   -moz-appearance: none;
 }
