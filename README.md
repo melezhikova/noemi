@@ -1,3 +1,3 @@
-# mq-diplom
+# noemi
 
-https://melezhikova.github.io/mq-diplom/
+https://melezhikova.github.io/noemi/
